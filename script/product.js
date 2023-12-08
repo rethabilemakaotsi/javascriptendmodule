@@ -1,31 +1,32 @@
 let product = [
     {
         id: 0,
-        image: "https://i.postimg.cc/gkwFfmMN/Jagermeister-removebg-preview.png",
+        image: "https://i.postimg.cc/4NdVxjwd/product-2-removebg-preview.png",
+        
         title: 'Jagermister',
         price: 120,
     },
     {
         id: 1,
-        image: "https://i.postimg.cc/13nYNd39/10800904-EA-checkers515-Wx515-H-removebg-preview.png",
+        image: "https://i.postimg.cc/W3kYChFB/HENNESSY-removebg-preview.png",
         title: 'Ballianto',
         price: 120,
     },
     {
         id: 2,
-        image: "https://i.postimg.cc/SQc13VVs/remmy-removebg-preview.png",
+        image: "https://i.postimg.cc/DzWx48gS/product3-removebg-preview.png",
         title: 'Ballianto',
         price: 120,
     },
     {
         id: 3,
-        image: "https://i.postimg.cc/wMRskDys/don-removebg-preview.png",
+        image: "https://i.postimg.cc/DzjKnJzm/product-1-removebg-preview.png",
         title: 'Donjlio',
         price: 120,
     },
     {
         id: 4,
-        image: "https://i.postimg.cc/s21SXFjc/azul-removebg-preview.png",
+        image: "https://i.postimg.cc/W38q27kg/product4-removebg-preview.png",
         title: 'Azul',
         price: 120,
     }
@@ -34,17 +35,22 @@ let product = [
 document.getElementById('root').innerHTML = product.map((item, i) => {
     let { image, title, price } = item;
     return (
-        `<div class='box'>
-            <div class='img-box'>
-                <img class='images' src=${image}></img>
-            </div>
-            <p>ITEM:${title}</p>
-            <h2> PRICE: R ${price}.00</h2>
+    
+        `  <div class="col d-flex ">
+          <div class="card "" style="width: 18rem;" >
+        <img src="${image}" class="card-img-top w-100" alt="..." >
+        <div class="card-body">
+          <h5 class="card-title">${title}</h5>
+          <p class="card-text text-dark">R ${price}</p>
             <button onclick='addtocart(${i})'>Add to cart</button>
+        </div>
         </div>`
+
     );
+
 }).join('');
 
+localStorage.setItem('Product', JSON.stringify(product));
 let cart = [];
 
 function addtocart(a) {
@@ -70,18 +76,19 @@ function displaycart() {
             total = total + price;
             document.getElementById("total").innerHTML = "R" + total + ".00";
             return (
-                `<div class='cart-item'>
-                    <div class='row-img'>
-                        <img class='rowing' src=${image}>
-                    </div>
-                    <p style='font-size:12px;'>${title}</p>
-                    <h2 style='font-size: 15px;'>R ${price}.00</h2>
-                    <i class='fa-solid fa-trash' onclick='delElement(${j++})'></i>
+                `
+            
+               
+                </div>
+              </div>
+                   
                 </div>`
+               
             );
         }).join('');
     }
 }
+displaycart()
 
 
 
