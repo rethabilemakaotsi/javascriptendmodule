@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product</title>
+  <title>Product page</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -30,13 +30,12 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 
 
-        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+        <a class="nav-link" href="./about.html">About</a>
         <a class="nav-link" href="./product.html">Product</a>
-        <a class="nav-link" href="admin.html">Admin</a>
-        <a class="nav-link" href="chekout.html">Checkout</a>
-        <a class="nav-link" href="contact.html">Contact</a>
-        
+        <a class="nav-link" href="./chekout.html">Checkout</a>
+        <a class="nav-link" href="./admin.html">Admin</a>
+        <a class="nav-link" href="./contact.html">Contact</a>
         
       </div>
     </div>
@@ -48,14 +47,16 @@
     <header>
       <h1>Product</h1>
     </header>
-    
-   <div class="row  text-center" id="root" >
-
-
-     <h1 id="total" class="text-white">
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="search" aria-label="Recipient's username" aria-describedby="button-addon2" product-search>
+      <button class="btn btn-outline-secondary" type="button" id="sortByPrice">Sort by price</button>
+    </div>
+    <div class="row">
+      <h1 id="total" class="text-white">
    
-     </h1>
-
+      </h1>
+    </div>
+   <div class="row justify-content-between  text-center" id="root" >
    </div>
 
    <div class="row">

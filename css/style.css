@@ -17,23 +17,24 @@ header {
     color: white;
 
 }
-/* .navbar-brand{
-    font-family:'Nosifer', sans-serif;
-    color: red; 
-}
-.navbar-nav a {
-    font-family: sans-serif;
-    color: white;
-} */
+.brand{
+    color: red;
+    font-family: 'Nosifer', sans-serif;
+    font-size: xx-large;
 
+}
+
+.card{
+    width: 18rem;
+    margin-block: .5rem;
+}
+.row{
+    margin-block: 1rem;
+}
 .navbar-nav .nav-link.active {
     font-weight: bold;
 }
-#red{
-    color: red;
-    font-family:  'Nosifer', sans-serif;
-    font-size: 3rem;
-}
+
 #img{
     margin-left: 800px;
 }
@@ -41,19 +42,33 @@ a {
     text-decoration: none;
     color:red; 
 }
+#slogan{
+    color: red;
+    font-size: x-large;
+    font-family: 'Averia serif libre';
+}
+#warning{
+    margin-bottom: 80%;
+}
 
 
 p {
     color: white;
+    font-size: larger;
 }
 h2{
     font-family:  'Nosifer', sans-serif;
     color: red;
     background-color: black;
 }
+#about{
+    display: flex;
 
-
-
+}
+.input-group{
+    width: 15%;
+    background-color: red;
+}
 
 
 footer {
