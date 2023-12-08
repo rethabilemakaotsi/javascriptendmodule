@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+    display: block;
+    
+}
+
+header {
+    font-family: 'Nosifer', sans-serif;
+    text-align: center;
+    color: red;
+    background-color: black;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.navbar-brand,
+.navbar-nav a {
+    font-family: sans-serif;
+    color: white; /* Set text color to white */
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+}
+
+p {
+    color: white;
+}
+h2{
+    font-family:  'Nosifer', sans-serif;
+    color: red;
+    background-color: black;
+}
+img{
+    padding-right: 40px;
+}
+
+
+
+
+footer {
+    color: white;
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+}
+
+
