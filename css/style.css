@@ -13,17 +13,35 @@ header {
 
 .navbar {
     background-color: black;
-}
+    text-transform: uppercase;
+    color: white;
 
-.navbar-brand,
+}
+/* .navbar-brand{
+    font-family:'Nosifer', sans-serif;
+    color: red; 
+}
 .navbar-nav a {
     font-family: sans-serif;
-    color: white; /* Set text color to white */
-}
+    color: white;
+} */
 
 .navbar-nav .nav-link.active {
     font-weight: bold;
 }
+#red{
+    color: red;
+    font-family:  'Nosifer', sans-serif;
+    font-size: 3rem;
+}
+#img{
+    margin-left: 800px;
+}
+a {
+    text-decoration: none;
+    color:red; 
+}
+
 
 p {
     color: white;
@@ -33,9 +51,7 @@ h2{
     color: red;
     background-color: black;
 }
-img{
-    padding-right: 40px;
-}
+
 
 
 
