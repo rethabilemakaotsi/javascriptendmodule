@@ -1,3 +1,6 @@
+let yr = new Date().getFullYear();
+document.getElementById("thisYear").textContent = "TST" + yr;
+
 let products = JSON.parse(localStorage.getItem('shoppingCart')) || []
 let output= document.querySelector('.output');
 

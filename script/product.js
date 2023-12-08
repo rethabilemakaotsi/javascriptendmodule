@@ -1,4 +1,5 @@
-
+let yr = new Date().getFullYear();
+document.getElementById("thisYear").textContent = "TST" + yr;
 // created an array of objects
 
 let product = JSON.parse(localStorage.getItem('Product')) || [
