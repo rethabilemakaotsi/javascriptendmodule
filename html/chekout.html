@@ -9,9 +9,70 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     
+  <nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+      <a id="navbar-brand " href="" class="brand">TST</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" bg danger>
+
+
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+        <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+        <a class="nav-link" href="./about.html">About</a>
+        <a class="nav-link" href="./product.html">Product</a>
+        <a class="nav-link" href="./chekout.html">Checkout</a>
+        <a class="nav-link" href="./admin.html">Admin</a>
+        <a class="nav-link" href="./contact.html">Contact</a>
+      </div>
+    </div>
+
+  </nav>
+
+  <main class="container-fluid">
+    <h1>
+        Checkout
+    </h1>
+
+
+  
+
+
+    <div class="row">
+
+        <table class="table text-white">
+            <thead>
+              <tr>
+                <!-- <th scope="col">id</th> -->
+
+                <th scope="col">Title</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+
+              </tr>
+            </thead>
+            <tbody class="output text-white">
+
+
+              <tr>
+                <button class="btn btn-danger col-6 clearBtn">Clear</button>
+                <button class="btn btn-primary col-6 purchaseBtn">Purchase</button>
+              </tr>
+
+            </tbody>
+            
+          </table>
+          
+    </div>
+
+  </main>
+
+  <script src="../script/checkout.js"></script>
 </body>
 </html>
